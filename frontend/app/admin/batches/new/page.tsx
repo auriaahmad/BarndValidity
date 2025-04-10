@@ -28,10 +28,10 @@ export default function NewBatchPage() {
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
           <h1 className="text-3xl font-bold text-gray-900">Create New Batch</h1>
-          <form onSubmit={handleSubmit} className="mt-6 space-y-6">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <form onSubmit={handleSubmit} className="mt-8 space-y-8">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div>
-                <label htmlFor="schoolName" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="schoolName" className="block text-base font-medium text-gray-700">
                   School Name
                 </label>
                 <input
@@ -40,11 +40,11 @@ export default function NewBatchPage() {
                   name="schoolName"
                   value={formData.schoolName}
                   onChange={(e) => setFormData({ ...formData, schoolName: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base px-4 py-3"
                 />
               </div>
               <div>
-                <label htmlFor="productType" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="productType" className="block text-base font-medium text-gray-700">
                   Product Type
                 </label>
                 <input
@@ -53,11 +53,11 @@ export default function NewBatchPage() {
                   name="productType"
                   value={formData.productType}
                   onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base px-4 py-3"
                 />
               </div>
               <div>
-                <label htmlFor="quantity" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="quantity" className="block text-base font-medium text-gray-700">
                   Quantity
                 </label>
                 <input
@@ -66,11 +66,11 @@ export default function NewBatchPage() {
                   name="quantity"
                   value={formData.quantity}
                   onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base px-4 py-3"
                 />
               </div>
               <div>
-                <label htmlFor="batchNumber" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="batchNumber" className="block text-base font-medium text-gray-700">
                   Batch Number
                 </label>
                 <input
@@ -79,14 +79,14 @@ export default function NewBatchPage() {
                   name="batchNumber"
                   value={formData.batchNumber}
                   onChange={(e) => setFormData({ ...formData, batchNumber: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 text-base px-4 py-3"
                 />
               </div>
             </div>
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Create Batch
               </button>
